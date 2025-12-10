@@ -3,209 +3,290 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lumio Residences — Luxo Contemporâneo em Oliveira do Douro</title>
-<meta name="description" content="Lumio Residences — empreendimento contemporâneo de luxo na Rua José Bonaparte, Oliveira do Douro. Tipologias para famílias e investidores." />
-<link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+<title>Lumio Residences — Moderno | Azul | Luxo</title>
+<meta name="description" content="Lumio Residences — empreendimento contemporâneo de luxo em Oliveira do Douro. Tipologias para famílias e investidores. Localização: Rua José Bonaparte." />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-/* ====== Reset & base ====== */
-:root{
---bg:#0f1113; --card:#0f1315; --muted:#9aa4a8; --accent:#d9cfa6; --white:#f6f6f6;
---maxw:1100px; --radius:12px; font-family:Inter, 'Helvetica Neue', Arial, sans-serif;
-}
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:linear-gradient(180deg,#f7f7f7 0%, #ffffff 100%);color:#0b0b0b}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.container{max-width:var(--maxw);margin:0 auto;padding:32px}
+  :root{
+    --bg:#f6f8fb;
+    --paper:#ffffff;
+    --muted:#7a8aa6;
+    --navy:#042a5b;
+    --accent:#1e88e5; /* azul vivo */
+    --gold:#c9b298;
+    --radius:14px;
+    --maxw:1200px;
+    --glass: rgba(255,255,255,0.65);
+    --shadow: 0 10px 30px rgba(2,8,23,0.08);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#0b2540;background:linear-gradient(180deg,var(--bg),#ffffff);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
 
+  /* Container */
+  .container{max-width:var(--maxw);margin:0 auto;padding:28px}
 
-/* ====== Header ====== */
-header{position:sticky;top:0;backdrop-filter:blur(6px);background:rgba(255,255,255,0.6);border-bottom:1px solid rgba(12,14,16,0.04)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px}
-.brand{display:flex;align-items:center;gap:14px}
-.logo{width:54px;height:54px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffffff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#112}
-.navlinks{display:flex;gap:20px;font-weight:600}
-.cta{padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,#111 0%, #333 100%);color:#fff}
+  /* Header */
+  header{position:sticky;top:0;z-index:40;background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.55));backdrop-filter:blur(6px);border-bottom:1px solid rgba(6,20,40,0.04)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;gap:20px;max-width:var(--maxw);margin:0 auto}
+  .brand{display:flex;align-items:center;gap:14px}
+  .logo{
+    width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--navy),var(--accent));color:#fff;font-weight:900;font-family:Playfair Display,serif;font-size:20px;box-shadow:var(--shadow)
+  }
+  .navlinks{display:flex;gap:18px;align-items:center}
+  .navlinks a{color:var(--navy);font-weight:600;padding:8px 10px;border-radius:8px}
+  .navlinks a:hover{background:rgba(30,136,229,0.08)}
+  .cta{background:linear-gradient(90deg,var(--accent),#6fb3ff);padding:10px 16px;border-radius:10px;color:#fff;font-weight:700;box-shadow:0 8px 24px rgba(30,136,229,0.14)}
 
+  /* Hero */
+  .hero{display:grid;grid-template-columns:1fr 480px;align-items:center;gap:36px;padding:84px 0}
+  .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.75));padding:42px;border-radius:18px;box-shadow:0 20px 60px rgba(2,16,45,0.08)}
+  .eyebrow{font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:12px}
+  .hero-title{font-family:Playfair Display, serif;font-size:44px;margin:0 0 12px;color:var(--navy);line-height:1.02}
+  .hero-sub{color:#16304a;margin:0 0 20px;font-size:16px}
+  .hero-cta{display:flex;gap:12px}
+  .btn{padding:12px 16px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+  .btn-primary{background:linear-gradient(90deg,var(--accent),#6fb3ff);color:white;box-shadow:0 12px 30px rgba(30,136,229,0.12)}
+  .btn-ghost{background:transparent;border:1px solid rgba(6,20,40,0.06);color:var(--navy)}
 
-/* ====== Hero ====== */
-.hero{display:grid;grid-template-columns:1fr 460px;gap:40px;align-items:center;padding:80px 0}
-.hero-left h1{font-size:44px;margin:0 0 14px 0;line-height:1.02}
-.eyebrow{color:var(--muted);letter-spacing:1px;text-transform:uppercase;font-size:12px;margin-bottom:12px}
-.hero-left p{color:#333;margin:0 0 20px 0;font-size:17px}
-.actions{display:flex;gap:12px}
-.btn-primary{background:linear-gradient(90deg,var(--accent),#cdbf93);border:none;padding:12px 18px;border-radius:10px;font-weight:700}
-.btn-ghost{border:1px solid #ddd;padding:12px 18px;border-radius:10px;background:transparent}
+  .hero-figure{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(2,16,45,0.08)}
+  .hero-figure::after{
+    content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,25,60,0.18) 10%, rgba(0,25,60,0.04) 60%);mix-blend-mode:multiply;pointer-events:none
+  }
 
+  /* Empreendimento */
+  section{padding:72px 0}
+  h2{font-family:Playfair Display,serif;color:var(--navy);font-size:28px;margin:0 0 12px}
+  .lead{color:var(--muted);margin:0 0 20px}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--paper);padding:20px;border-radius:14px;box-shadow:var(--shadow);border:1px solid rgba(6,20,40,0.02);transition:transform .32s ease, box-shadow .32s ease}
+  .card:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(2,16,45,0.09)}
+  .card h3{margin:0 0 8px;color:var(--navy);font-size:18px}
+  .card p{margin:0;color:var(--muted)}
 
-.card-hero{border-radius:18px;overflow:hidden;box-shadow:0 20px 40px rgba(15,15,15,0.08)}
+  /* Tipologias */
+  .tipos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .tipo{background:linear-gradient(180deg,#ffffff,#f8fbff);padding:14px;border-radius:12px;display:flex;gap:12px;align-items:center;border:1px solid rgba(6,20,40,0.03);transition:transform .3s ease}
+  .tipo img{width:160px;height:100px;object-fit:cover;border-radius:10px;flex-shrink:0}
+  .tipo .meta strong{display:block;font-size:18px;color:var(--navy)}
+  .tipo:hover{transform:translateY(-6px)}
 
+  /* Localização */
+  .map{height:320px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(6,20,40,0.03)}
+  .map img{width:100%;height:100%;object-fit:cover;display:block}
 
-/* ====== Sections ====== */
-section{padding:64px 0}
-h2{font-size:28px;margin:0 0 18px}
-.lead{color:var(--muted);margin-bottom:18px}
+  /* Contacto */
+  .contact{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:start}
+  form{display:flex;flex-direction:column;gap:12px}
+  input,textarea{padding:12px;border-radius:10px;border:1px solid rgba(6,20,40,0.06);background:#fff}
+  .small{font-size:13px;color:var(--muted)}
 
+  /* Footer */
+  footer{padding:48px 0;text-align:center;color:var(--muted);font-size:14px}
 
-/* Empreendimento */
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 12px 30px rgba(15,15,15,0.04)}
-.features{display:flex;flex-wrap:wrap;gap:12px}
-.feature{background:#f6f6f6;padding:10px 12px;border-radius:10px;font-weight:600}
+  /* Reveal animations */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.visible{opacity:1;transform:none}
 
-
-/* Tipologias */
-.tipos{display:flex;flex-direction:column;gap:14px}
-.tipo{display:flex;gap:14px;align-items:center}
-.tipo img{width:220px;height:140px;object-fit:cover;border-radius:10px}
-.tipo .meta{flex:1}
-.price{font-weight:800;color:#0b0b0b}
-
-
-/* Localização */
-.map{height:360px;border-radius:12px;overflow:hidden;background:#e6e6e6;display:flex;align-items:center;justify-content:center;color:#777}
-
-
-/* Contacto */
-.contact{display:grid;grid-template-columns:1fr 420px;gap:24px}
-form{display:flex;flex-direction:column;gap:12px}
-input,textarea{padding:12px;border-radius:8px;border:1px solid #e6e6e6}
-.disclaimer{font-size:13px;color:var(--muted)}
-
-
-/* Footer */
-footer{padding:28px 0;border-top:1px solid #eee;margin-top:40px}
-
-
-/* Responsive */
-@media (max-width:980px){
-.hero{grid-template-columns:1fr;}
-.grid-3{grid-template-columns:1fr 1fr}
-.contact{grid-template-columns:1fr}
-}
-@media (max-width:600px){
-.grid-3{grid-template-columns:1fr}
-}
-
-
+  /* Responsivo */
+  @media (max-width:1000px){
+    .hero{grid-template-columns:1fr;gap:20px;padding:56px 0}
+    .grid-3{grid-template-columns:1fr 1fr}
+    .tipos{grid-template-columns:1fr}
+    .contact{grid-template-columns:1fr}
+    .hero-figure{height:320px}
+  }
+  @media (max-width:600px){
+    .navlinks{display:none}
+    .hero-title{font-size:28px}
+    .container{padding:20px}
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="nav">
+  <div class="nav" role="navigation" aria-label="Main">
     <div class="brand">
-      <div class="logo">L</div>
-      <strong>Lumio Residences</strong>
+      <div class="logo" aria-hidden="true">L</div>
+      <div>
+        <div style="font-weight:700;color:var(--navy)">Lumio Residences</div>
+        <div style="font-size:12px;color:var(--muted)">Oliveira do Douro — Rua José Bonaparte</div>
+      </div>
     </div>
-    <div class="navlinks">
+
+    <nav class="navlinks" aria-label="Links principais">
       <a href="#empreendimento">Empreendimento</a>
       <a href="#tipologias">Tipologias</a>
+      <a href="#localizacao">Localização</a>
       <a href="#contacto">Contacto</a>
-    </div>
-    <a href="#contacto" class="cta">Contactar</a>
+    </nav>
+
+    <a class="cta" href="#contacto">Agendar Visita</a>
   </div>
 </header>
 
-<div class="container">
+<main>
 
-<section class="hero">
-  <div class="hero-left">
-    <div class="eyebrow">Oliveira do Douro</div>
-    <h1>Viver com Elegância e Conforto</h1>
-    <p>O Lumio Residences combina arquitetura contemporânea com materiais de excelência para oferecer um estilo de vida sofisticado.</p>
-    <div class="actions">
-      <a class="btn-primary" href="#tipologias">Ver Tipologias</a>
-      <a class="btn-ghost" href="#contacto">Agendar Visita</a>
-    </div>
-  </div>
-  <div>
-    <img src="images/hero.jpg" alt="Lumio Residences">
-  </div>
-</section>
+  <div class="container">
 
-<section id="empreendimento">
-  <h2>O Empreendimento</h2>
-  <p class="lead">Projetado para quem procura exclusividade, conforto e linhas modernas.</p>
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-card reveal" data-reveal>
+        <div class="eyebrow">Oliveira do Douro · Lumio Residences</div>
+        <h1 class="hero-title">Viver com vista. Viver com excelência.</h1>
+        <p class="hero-sub">Residencial contemporâneo de alto padrão, pensado para famílias exigentes e investidores de perfil premium.</p>
 
-  <div class="grid-3">
-    <div class="card">
-      <h3>Arquitetura Moderna</h3>
-      <p>Linhas elegantes e materiais de elevada qualidade.</p>
-    </div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a class="btn btn-primary" href="#tipologias">Ver Tipologias</a>
+          <a class="btn btn-ghost" href="#empreendimento">Saber Mais</a>
+        </div>
 
-    <div class="card">
-      <h3>Localização Premium</h3>
-      <p>A poucos minutos do centro de Gaia e com excelentes acessos.</p>
-    </div>
-
-    <div class="card">
-      <h3>Excelentes Acabamentos</h3>
-      <p>Detalhes pensados para maximizar conforto e durabilidade.</p>
-    </div>
-  </div>
-</section>
-
-<section id="tipologias">
-  <h2>Tipologias Disponíveis</h2>
-  <p class="lead">Soluções perfeitas para famílias e investidores.</p>
-
-  <div class="tipos">
-
-    <div class="tipo">
-      <img src="images/t1.jpg" alt="T1">
-      <div class="meta">
-        <strong>T1</strong>
-        <div class="price">Desde 189.000€</div>
+        <div style="margin-top:18px;color:var(--muted);font-size:14px">
+          <strong>Localização:</strong> Rua José Bonaparte, Oliveira do Douro
+        </div>
       </div>
-    </div>
 
-    <div class="tipo">
-      <img src="images/t2.jpg" alt="T2">
-      <div class="meta">
-        <strong>T2</strong>
-        <div class="price">Desde 239.000€</div>
+      <div class="hero-figure reveal" data-reveal>
+        <!-- Usa a tua imagem hero.JPG em /images/hero.jpg; se não existir, aparece placeholder automático -->
+        <img src="images/hero.jpg" alt="Vista do Lumio Residences" onerror="this.onerror=null;this.src='https://placehold.co/800x600?text=Hero+Image&bg=042a5b&fg=ffffff'">
       </div>
-    </div>
+    </section>
 
-    <div class="tipo">
-      <img src="images/t3.jpg" alt="T3">
-      <div class="meta">
-        <strong>T3</strong>
-        <div class="price">Desde 315.000€</div>
+    <!-- EMPREENDIMENTO -->
+    <section id="empreendimento" class="reveal" data-reveal>
+      <h2>O Empreendimento</h2>
+      <p class="lead">Projeto arquitetónico contemporâneo com foco em iluminação natural, aproveitamento das vistas e acabamentos de excelência.</p>
+
+      <div class="grid-3" style="margin-top:18px">
+        <article class="card">
+          <h3>Arquitetura de assinatura</h3>
+          <p>Fachadas contemporâneas, varandas generosas e uso de materiais de alta durabilidade.</p>
+        </article>
+
+        <article class="card">
+          <h3>Localização estratégica</h3>
+          <p>Rápido acesso às principais vias, comércio local e áreas de lazer — perfeito para famílias.</p>
+        </article>
+
+        <article class="card">
+          <h3>Sustentabilidade & eficiência</h3>
+          <p>Soluções pensadas para conforto térmico e reduzido consumo energético.</p>
+        </article>
       </div>
-    </div>
+    </section>
+
+    <!-- TIPOLOGIAS -->
+    <section id="tipologias" class="reveal" data-reveal>
+      <h2>Tipologias Disponíveis</h2>
+      <p class="lead">Plantas otimizada para conforto e rendimento — ideais para habitação e investimento.</p>
+
+      <div class="tipos" style="margin-top:18px">
+        <div class="tipo">
+          <img src="images/t1.jpg" alt="T1" onerror="this.onerror=null;this.src='https://placehold.co/320x200?text=T1&bg=eef6ff&fg=042a5b'">
+          <div class="meta">
+            <strong>T1</strong>
+            <div class="small">Desde 189.000€</div>
+          </div>
+        </div>
+
+        <div class="tipo">
+          <img src="images/t2.jpg" alt="T2" onerror="this.onerror=null;this.src='https://placehold.co/320x200?text=T2&bg=eef6ff&fg=042a5b'">
+          <div class="meta">
+            <strong>T2</strong>
+            <div class="small">Desde 239.000€</div>
+          </div>
+        </div>
+
+        <div class="tipo">
+          <img src="images/t3.jpg" alt="T3" onerror="this.onerror=null;this.src='https://placehold.co/320x200?text=T3&bg=eef6ff&fg=042a5b'">
+          <div class="meta">
+            <strong>T3</strong>
+            <div class="small">Desde 315.000€</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao" class="reveal" data-reveal>
+      <h2>Localização</h2>
+      <p class="lead">Rua José Bonaparte — Oliveira do Douro. Proximidade a serviços, escolas e acessos rodoviários.</p>
+
+      <div class="map" style="margin-top:18px">
+        <!-- Usa map.png; se faltar, placeholder -->
+        <img src="images/map.png" alt="Mapa da localização" onerror="this.onerror=null;this.src='https://placehold.co/1200x800?text=Mapa&bg=eef6ff&fg=042a5b'">
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="reveal" data-reveal>
+      <h2>Contacto</h2>
+      <p class="lead">Peça mais informações, documentação ou marque uma visita ao apartamento piloto.</p>
+
+      <div class="contact" style="margin-top:18px">
+        <form id="leadForm" aria-label="Formulário de contacto">
+          <input name="nome" type="text" placeholder="Nome" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <input name="telefone" type="tel" placeholder="Telefone">
+          <textarea name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+          <div style="display:flex;gap:12px;align-items:center">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <div class="small">Responderemos o mais rápido possível.</div>
+          </div>
+        </form>
+
+        <div>
+          <div class="map" style="height:220px">
+            <img src="images/map.png" alt="Mapa pequeno" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Mapa'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Lumio Residences — Todos os direitos reservados • Rua José Bonaparte, Oliveira do Douro
+    </footer>
 
   </div>
-</section>
+</main>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p class="lead">Peça mais informações ou marque uma visita.</p>
+<script>
+  // Smooth scroll for in-page links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', function(ev){
+      ev.preventDefault();
+      const id = this.getAttribute('href');
+      if(id && id !== '#'){
+        const el = document.querySelector(id);
+        if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  });
 
-  <div class="contact">
-    <form>
-      <input type="text" placeholder="Nome" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Telefone">
-      <textarea rows="5" placeholder="Mensagem"></textarea>
-      <button class="btn-primary">Enviar</button>
-      <div class="disclaimer">Responderemos o mais rápido possível.</div>
-    </form>
+  // Simple reveal on scroll
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const obs = new IntersectionObserver(entries=>{
+    for(const e of entries){
+      if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }
+    }
+  }, {threshold: 0.12});
+  revealEls.forEach(el=>obs.observe(el));
 
-    <img src="images/map.jpg" alt="Mapa">
-  </div>
-</section>
-
-<footer>
-  © 2025 Lumio Residences — Todos os direitos reservados
-</footer>
-
-</div>
+  // Simple mock form handler (no backend) — shows a friendly message
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = this.nome.value || 'Interessado';
+    const email = this.email.value || '';
+    // Aqui poderias integrar com Netlify Forms / Formspree / Google Sheets
+    alert('Obrigado, ' + name + '! Recebemos a tua mensagem — responderemos por email em breve.');
+    this.reset();
+  });
+</script>
 
 </body>
 </html>
-
-
-
-
