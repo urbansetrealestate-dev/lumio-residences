@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lumio Residences — Luxo Contemporâneo em Oliveira do Douro</title>
+<meta name="description" content="Lumio Residences — empreendimento contemporâneo de luxo na Rua José Bonaparte, Oliveira do Douro. Tipologias para famílias e investidores." />
+<link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+<style>
+/* ====== Reset & base ====== */
+:root{
+--bg:#0f1113; --card:#0f1315; --muted:#9aa4a8; --accent:#d9cfa6; --white:#f6f6f6;
+--maxw:1100px; --radius:12px; font-family:Inter, 'Helvetica Neue', Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#f7f7f7 0%, #ffffff 100%);color:#0b0b0b}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:var(--maxw);margin:0 auto;padding:32px}
+
+
+/* ====== Header ====== */
+header{position:sticky;top:0;backdrop-filter:blur(6px);background:rgba(255,255,255,0.6);border-bottom:1px solid rgba(12,14,16,0.04)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:54px;height:54px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffffff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#112}
+.navlinks{display:flex;gap:20px;font-weight:600}
+.cta{padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,#111 0%, #333 100%);color:#fff}
+
+
+/* ====== Hero ====== */
+.hero{display:grid;grid-template-columns:1fr 460px;gap:40px;align-items:center;padding:80px 0}
+.hero-left h1{font-size:44px;margin:0 0 14px 0;line-height:1.02}
+.eyebrow{color:var(--muted);letter-spacing:1px;text-transform:uppercase;font-size:12px;margin-bottom:12px}
+.hero-left p{color:#333;margin:0 0 20px 0;font-size:17px}
+.actions{display:flex;gap:12px}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#cdbf93);border:none;padding:12px 18px;border-radius:10px;font-weight:700}
+.btn-ghost{border:1px solid #ddd;padding:12px 18px;border-radius:10px;background:transparent}
+
+
+.card-hero{border-radius:18px;overflow:hidden;box-shadow:0 20px 40px rgba(15,15,15,0.08)}
+
+
+/* ====== Sections ====== */
+section{padding:64px 0}
+h2{font-size:28px;margin:0 0 18px}
+.lead{color:var(--muted);margin-bottom:18px}
+
+
+/* Empreendimento */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 12px 30px rgba(15,15,15,0.04)}
+.features{display:flex;flex-wrap:wrap;gap:12px}
+.feature{background:#f6f6f6;padding:10px 12px;border-radius:10px;font-weight:600}
+
+
+/* Tipologias */
+.tipos{display:flex;flex-direction:column;gap:14px}
+.tipo{display:flex;gap:14px;align-items:center}
+.tipo img{width:220px;height:140px;object-fit:cover;border-radius:10px}
+.tipo .meta{flex:1}
+.price{font-weight:800;color:#0b0b0b}
+
+
+/* Localização */
+.map{height:360px;border-radius:12px;overflow:hidden;background:#e6e6e6;display:flex;align-items:center;justify-content:center;color:#777}
+
+
+/* Contacto */
+.contact{display:grid;grid-template-columns:1fr 420px;gap:24px}
+form{display:flex;flex-direction:column;gap:12px}
+input,textarea{padding:12px;border-radius:8px;border:1px solid #e6e6e6}
+.disclaimer{font-size:13px;color:var(--muted)}
+
+
+/* Footer */
+footer{padding:28px 0;border-top:1px solid #eee;margin-top:40px}
+
+
+/* Responsive */
+@media (max-width:980px){
+.hero{grid-template-columns:1fr;}
+.grid-3{grid-template-columns:1fr 1fr}
+.contact{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+.grid-3{grid-template-columns:1fr}
+}
+
+
+</style>
+</head>
+</html>
